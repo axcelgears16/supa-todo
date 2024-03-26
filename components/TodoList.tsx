@@ -28,7 +28,7 @@ export default function NoteList({ session }: { session: any }) {
     }
   }
 
-  const deleteTodo = async (id: number) => {
+  const deleteTodo = async (id: string) => {
     await deleteNote(id);
     setNotes(Notes.filter((x) => x.id != id))
   }
